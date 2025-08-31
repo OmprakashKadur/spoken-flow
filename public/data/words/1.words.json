@@ -1,0 +1,12 @@
+[
+  { "id": 1, "word": "Confidence", "meaning": "belief in yourself" },
+  { "id": 2, "word": "Audience", "meaning": "people listening to you" },
+  { "id": 3, "word": "Presentation", "meaning": "a formal talk given to an audience" },
+  { "id": 4, "word": "Communication", "meaning": "the act of sharing information" },
+  { "id": 5, "word": "Leadership", "meaning": "the ability to guide and inspire others" },
+  { "id": 6, "word": "Innovation", "meaning": "a new idea or method" },
+  { "id": 7, "word": "Collaboration", "meaning": "working together with others" },
+  { "id": 8, "word": "Professional", "meaning": "relating to work or business" },
+  { "id": 9, "word": "Experience", "meaning": "knowledge gained from doing something" },
+  { "id": 10, "word": "Opportunity", "meaning": "a chance to do something" }
+]

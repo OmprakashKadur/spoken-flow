@@ -1,0 +1,12 @@
+[
+  { "id": 1, "en": "Could you please share the project updates?", "kn": "ದಯವಿಟ್ಟು ಯೋಜನೆ ತಜ್ಜಗಳನ್ನು ಹಂಚಿಕೊಳ್ಳಬಹುದೇ?" },
+  { "id": 2, "en": "We should finalize this before Friday.", "kn": "ನಾವು ಇದನ್ನು ಶುಕ್ರವಾರದ ಒಳಗೆ ಅಂತಿಮಗೊಳಿಸಬೇಕು." },
+  { "id": 3, "en": "I appreciate your hard work on this project.", "kn": "ಈ ಯೋಜನೆಯಲ್ಲಿ ನಿಮ್ಮ ಕಷ್ಟದ ಕೆಲಸಕ್ಕೆ ನಾನು ಧನ್ಯವಾದಗಳು." },
+  { "id": 4, "en": "Let's schedule a meeting for next week.", "kn": "ಮುಂದಿನ ವಾರಕ್ಕೆ ಸಭೆಯನ್ನು ನಿಗದಿಪಡಿಸೋಣ." },
+  { "id": 5, "en": "The presentation went really well today.", "kn": "ಇಂದು ಪ್ರಸ್ತುತಿ ತುಂಬಾ ಚೆನ್ನಾಗಿ ಹೋಯಿತು." },
+  { "id": 6, "en": "Can you help me with this task?", "kn": "ಈ ಕಾರ್ಯದಲ್ಲಿ ನೀವು ನನಗೆ ಸಹಾಯ ಮಾಡಬಹುದೇ?" },
+  { "id": 7, "en": "I need to review the documents first.", "kn": "ನಾನು ಮೊದಲು ದಾಖಲೆಗಳನ್ನು ಪರಿಶೀಲಿಸಬೇಕು." },
+  { "id": 8, "en": "What's your opinion on this matter?", "kn": "ಈ ವಿಷಯದ ಬಗ್ಗೆ ನಿಮ್ಮ ಅಭಿಪ್ರಾಯ ಏನು?" },
+  { "id": 9, "en": "Let me know if you need any clarification.", "kn": "ನಿಮಗೆ ಯಾವುದೇ ಸ್ಪಷ್ಟತೆ ಬೇಕಾದರೆ ನನಗೆ ತಿಳಿಸಿ." },
+  { "id": 10, "en": "We'll discuss this in detail tomorrow.", "kn": "ನಾಳೆ ನಾವು ಇದನ್ನು ವಿವರವಾಗಿ ಚರ್ಚಿಸುತ್ತೇವೆ." }
+]

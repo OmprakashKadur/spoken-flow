@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "title": "HR Interview Conversation",
+  "dialogue": [
+    { "speaker": "HR", "en": "Good morning! Welcome to our company. Tell me about yourself." },
+    { "speaker": "You", "en": "Good morning! I am Omprakash, currently working in software development with 5 years of experience." },
+    { "speaker": "HR", "en": "That's great! Can you tell me about your technical skills?" },
+    { "speaker": "You", "en": "I specialize in React, Node.js, and Python. I've worked on several full-stack applications and have experience with cloud platforms like AWS." },
+    { "speaker": "HR", "en": "Excellent! What motivates you in your work?" },
+    { "speaker": "You", "en": "I'm motivated by solving complex problems and creating solutions that make a real impact. I love learning new technologies and collaborating with teams." },
+    { "speaker": "HR", "en": "That's wonderful! How do you handle challenging situations at work?" },
+    { "speaker": "You", "en": "I approach challenges systematically - first understanding the problem, then breaking it down into smaller parts, and finally working with the team to find the best solution." },
+    { "speaker": "HR", "en": "Perfect! Do you have any questions for us?" },
+    { "speaker": "You", "en": "Yes, I'd like to know about the company culture and opportunities for professional growth." },
+    { "speaker": "HR", "en": "Great question! We have a collaborative culture and offer regular training programs. Thank you for your time today!" }
+  ]
+}

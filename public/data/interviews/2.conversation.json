@@ -1,0 +1,17 @@
+{
+  "id": 2,
+  "title": "Technical Interview Conversation",
+  "dialogue": [
+    { "speaker": "Interviewer", "en": "Hello! Let's start with a coding problem. Can you explain how you would implement a binary search?" },
+    { "speaker": "You", "en": "Hello! Binary search is an efficient algorithm for finding an element in a sorted array. It works by repeatedly dividing the search interval in half." },
+    { "speaker": "Interviewer", "en": "Great! Can you write the code for it?" },
+    { "speaker": "You", "en": "Sure! I'll write it in Python. The time complexity is O(log n) and space complexity is O(1)." },
+    { "speaker": "Interviewer", "en": "Excellent! Now, how would you handle edge cases?" },
+    { "speaker": "You", "en": "I would check if the array is empty, handle cases where the target is not found, and ensure the array is sorted before applying binary search." },
+    { "speaker": "Interviewer", "en": "Perfect! Let's move to system design. How would you design a URL shortener?" },
+    { "speaker": "You", "en": "I would use a hash function to generate short URLs, store mappings in a database, handle collisions, and implement features like analytics and expiration." },
+    { "speaker": "Interviewer", "en": "Great thinking! Any questions for me?" },
+    { "speaker": "You", "en": "Yes, I'd like to know about the team structure and the technologies you're currently using." },
+    { "speaker": "Interviewer", "en": "We're a small team using modern tech stack. Thank you for the great interview!" }
+  ]
+}

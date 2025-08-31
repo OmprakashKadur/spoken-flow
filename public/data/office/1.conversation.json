@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "title": "Office Meeting Conversation",
+  "dialogue": [
+    { "speaker": "Manager", "en": "Good morning team! Let's start our weekly standup. Sarah, what did you work on yesterday?" },
+    { "speaker": "Sarah", "en": "Good morning! I completed the user authentication module and started working on the dashboard design." },
+    { "speaker": "Manager", "en": "Great progress! John, how about you?" },
+    { "speaker": "John", "en": "I finished the API integration and fixed the bug in the search functionality. Today I'll work on performance optimization." },
+    { "speaker": "Manager", "en": "Excellent! Mike, any blockers?" },
+    { "speaker": "Mike", "en": "I'm waiting for the design approval from the UX team. Once I get that, I can proceed with the frontend implementation." },
+    { "speaker": "Manager", "en": "I'll follow up with the UX team. Any other updates or concerns?" },
+    { "speaker": "Sarah", "en": "I have a question about the new requirements. Should we prioritize the mobile version first?" },
+    { "speaker": "Manager", "en": "Good point! Let's discuss that in detail after the standup. Any other business?" },
+    { "speaker": "Team", "en": "No, that's all for today." },
+    { "speaker": "Manager", "en": "Perfect! Let's have a great day everyone!" }
+  ]
+}

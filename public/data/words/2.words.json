@@ -1,0 +1,12 @@
+[
+  { "id": 11, "word": "Motivation", "meaning": "the reason for doing something" },
+  { "id": 12, "word": "Achievement", "meaning": "something accomplished successfully" },
+  { "id": 13, "word": "Challenge", "meaning": "a difficult task or problem" },
+  { "id": 14, "word": "Success", "meaning": "achieving your goals" },
+  { "id": 15, "word": "Growth", "meaning": "the process of developing" },
+  { "id": 16, "word": "Learning", "meaning": "gaining knowledge or skills" },
+  { "id": 17, "word": "Practice", "meaning": "repeated exercise to improve skills" },
+  { "id": 18, "word": "Improvement", "meaning": "becoming better at something" },
+  { "id": 19, "word": "Focus", "meaning": "concentrating attention on something" },
+  { "id": 20, "word": "Determination", "meaning": "firmness of purpose" }
+]
