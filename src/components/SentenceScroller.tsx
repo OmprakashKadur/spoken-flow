@@ -13,14 +13,14 @@ interface SentenceScrollerProps {
 export default function SentenceScroller({
   content,
   autoScroll = false,
-  speed = 1,
+  speed = 0.5,
   fontSize = 16,
   className = ''
 }: SentenceScrollerProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoScrolling, setIsAutoScrolling] = useState(autoScroll);
   const containerRef = useRef<HTMLDivElement>(null);
-  const intervalRef = useRef<NodeJS.Timeout>();
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     if (isAutoScrolling) {

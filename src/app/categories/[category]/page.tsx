@@ -22,7 +22,7 @@ export default function CategoryPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [showMarkedOnly, setShowMarkedOnly] = useState(false);
   const [fontSize, setFontSize] = useState(16);
-  const [scrollSpeed, setScrollSpeed] = useState(1);
+  const [scrollSpeed, setScrollSpeed] = useState(0.7);
 
   const categoryInfo = categories.find(c => c.id === category);
 
@@ -104,6 +104,7 @@ export default function CategoryPage() {
               >
                 📚 Marked Items
               </Link>
+              <DarkModeToggle />
             </nav>
           </div>
         </div>
@@ -112,7 +113,7 @@ export default function CategoryPage() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Controls */}
         <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center space-x-4">
+          {/* <div className="flex items-center space-x-4">
             <button
               onClick={() => setShowMarkedOnly(!showMarkedOnly)}
               className={`px-4 py-2 rounded-lg font-medium transition-colors ${
@@ -123,11 +124,11 @@ export default function CategoryPage() {
             >
               {showMarkedOnly ? '✅ Show All' : '📌 Show Marked Only'}
             </button>
-          </div>
+          </div> */}
 
           {isLong && (
             <div className="flex items-center space-x-4">
-              <div className="flex items-center space-x-2">
+              {/* <div className="flex items-center space-x-2">
                 <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
                   Font Size:
                 </label>
@@ -142,7 +143,7 @@ export default function CategoryPage() {
                 <span className="text-sm text-gray-600 dark:text-gray-400 w-8">
                   {fontSize}px
                 </span>
-              </div>
+              </div> */}
               <div className="flex items-center space-x-2">
                 <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
                   Speed:
@@ -150,8 +151,8 @@ export default function CategoryPage() {
                 <input
                   type="range"
                   min="0.5"
-                  max="3"
-                  step="0.5"
+                  max="2"
+                  step="0.1"
                   value={scrollSpeed}
                   onChange={(e) => setScrollSpeed(Number(e.target.value))}
                   className="w-20"
@@ -176,47 +177,53 @@ export default function CategoryPage() {
               <div className="grid gap-8 lg:grid-cols-3">
                 <div className="lg:col-span-2">
                   {data.map((item) => {
-                    if ('content' in item) {
-                      const speech = item as Speech;
-                      return (
-                        <div key={speech.id} className="mb-8">
-                          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                            {speech.title}
-                          </h2>
-                          <SentenceScroller
-                            content={speech.content}
-                            speed={scrollSpeed}
-                            fontSize={fontSize}
-                          />
-                        </div>
-                      );
-                    } else if ('dialogue' in item) {
-                      const conversation = item as Conversation;
-                      return (
-                        <div key={conversation.id} className="mb-8">
-                          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                            {conversation.title}
-                          </h2>
-                          <div className="space-y-4">
-                            {conversation.dialogue.map((line, index) => (
-                              <div
-                                key={index}
-                                className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm"
-                              >
-                                <div className="flex items-start space-x-3">
-                                  <span className="font-semibold text-blue-600 dark:text-blue-400 min-w-[60px]">
-                                    {line.speaker}:
-                                  </span>
-                                  <p className="text-gray-900 dark:text-white leading-relaxed">
-                                    {line.en}
-                                  </p>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      );
-                    }
+                                         if ('content' in item) {
+                       const speech = item as Speech;
+                       return (
+                         <div key={speech.id} className="mb-8">
+                           <div className="flex items-start justify-between mb-4">
+                             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                               {speech.title}
+                             </h2>
+                             <MarkButton category={category} id={speech.id} />
+                           </div>
+                           <SentenceScroller
+                             content={speech.content}
+                             speed={scrollSpeed}
+                             fontSize={fontSize}
+                           />
+                         </div>
+                       );
+                     } else if ('dialogue' in item) {
+                       const conversation = item as Conversation;
+                       return (
+                         <div key={conversation.id} className="mb-8">
+                           <div className="flex items-start justify-between mb-4">
+                             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                               {conversation.title}
+                             </h2>
+                             <MarkButton category={category} id={conversation.id} />
+                           </div>
+                           <div className="space-y-4">
+                             {conversation.dialogue.map((line, index) => (
+                               <div
+                                 key={index}
+                                 className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm"
+                               >
+                                 <div className="flex items-start space-x-3">
+                                   <span className="font-semibold text-blue-600 dark:text-blue-400 min-w-[60px]">
+                                     {line.speaker}:
+                                   </span>
+                                   <p className="text-gray-900 dark:text-white leading-relaxed">
+                                     {line.en}
+                                   </p>
+                                 </div>
+                               </div>
+                             ))}
+                           </div>
+                         </div>
+                       );
+                     }
                     return null;
                   })}
                 </div>
