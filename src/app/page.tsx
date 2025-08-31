@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { categories } from '@/utils/data';
 import CategoryCard from '@/components/CategoryCard';
+import DarkModeToggle from '@/components/DarkModeToggle';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
               >
                 📚 Marked Items
               </Link>
+              <DarkModeToggle />
             </nav>
           </div>
         </div>

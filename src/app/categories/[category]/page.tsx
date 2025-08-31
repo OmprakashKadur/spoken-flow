@@ -10,6 +10,7 @@ import Paginator from '@/components/Paginator';
 import MarkButton from '@/components/MarkButton';
 import SentenceScroller from '@/components/SentenceScroller';
 import Recorder from '@/components/Recorder';
+import DarkModeToggle from '@/components/DarkModeToggle';
 
 export default function CategoryPage() {
   const params = useParams();
