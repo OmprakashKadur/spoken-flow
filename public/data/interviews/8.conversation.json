@@ -1,0 +1,86 @@
+{
+  "id": 8,
+  "title": "Informational Interview: Career Exploration and Networking",
+  "dialogue": [
+    {
+      "speaker": "Industry Professional",
+      "en": "Hi there! I'm Mark, a Senior Product Manager at TechCorp. Thanks for reaching out for an informational interview. I'm happy to share insights about my career path and the industry."
+    },
+    {
+      "speaker": "Student",
+      "en": "Hi Mark! Thank you so much for taking the time to meet with me. I'm Sarah, a final-year business student interested in product management. I really appreciate this opportunity to learn from your experience."
+    },
+    {
+      "speaker": "Industry Professional",
+      "en": "You're very welcome! I always enjoy helping students explore career paths. Let's start with your background. What's drawing you to product management?"
+    },
+    {
+      "speaker": "Student",
+      "en": "Great question! I've always been fascinated by how products solve real user problems, and I love the combination of business strategy, user research, and technical understanding. I've taken courses in marketing, statistics, and design thinking, and product management seems to bring all these elements together."
+    },
+    {
+      "speaker": "Industry Professional",
+      "en": "That's a great foundation! You're right that product management is interdisciplinary. Can you tell me about any projects or experiences that have given you a taste of product work?"
+    },
+    {
+      "speaker": "Student",
+      "en": "Absolutely! I led a team project where we developed a mobile app concept for helping students find study groups. I conducted user interviews, created user personas, prioritized features based on user needs, and worked with designers and developers to create a prototype. It was really exciting to see the whole process from idea to execution."
+    },
+    {
+      "speaker": "Industry Professional",
+      "en": "That's excellent experience! User research and cross-functional collaboration are core PM skills. What aspects of that project did you enjoy most, and what did you find challenging?"
+    },
+    {
+      "speaker": "Student",
+      "en": "I really enjoyed talking to users and understanding their pain points - it was fascinating to see how their needs evolved as we dug deeper. The most challenging part was balancing different stakeholder priorities. The designers wanted more time for polish, the developers wanted to focus on core functionality, and we had a tight deadline. Learning to navigate those trade-offs was really valuable."
+    },
+    {
+      "speaker": "Industry Professional",
+      "en": "That's a perfect example of real PM work! Those trade-off decisions are what we deal with every day. Now, let me ask you about your career goals. Where do you see yourself in five years?"
+    },
+    {
+      "speaker": "Student",
+      "en": "Great question! I'd love to start as an Associate Product Manager and grow into a Senior PM role. I'm particularly interested in consumer products and user experience. Long-term, I'm curious about product strategy and potentially moving into product leadership. But I'm also open to exploring different industries to find the right fit."
+    },
+    {
+      "speaker": "Industry Professional",
+      "en": "That's a realistic and thoughtful plan. What specific skills or experiences do you think would be most valuable to develop before entering the field?"
+    },
+    {
+      "speaker": "Student",
+      "en": "I think I should strengthen my data analysis skills - I've taken statistics courses, but I'd like to get more comfortable with SQL and analytics tools. I'm also working on my technical understanding by taking some basic programming courses. And I'm trying to build my network by attending industry events and connecting with professionals like you."
+    },
+    {
+      "speaker": "Industry Professional",
+      "en": "Excellent! Those are all valuable areas to focus on. Let me share some advice based on my experience. What questions do you have about breaking into product management?"
+    },
+    {
+      "speaker": "Student",
+      "en": "I have several! What's the best way to get my first PM role? Should I focus on startups or larger companies? And what's the biggest misconception people have about the job?"
+    },
+    {
+      "speaker": "Industry Professional",
+      "en": "Great questions! For your first role, I'd recommend looking at startups or smaller companies where you can wear many hats and learn quickly. Larger companies often want more experience. As for misconceptions - many people think PMs just write requirements, but we're really the glue between business, users, and technology. It's much more strategic and collaborative than people realize."
+    },
+    {
+      "speaker": "Student",
+      "en": "That's really helpful insight! What advice would you give to someone just starting their PM career?"
+    },
+    {
+      "speaker": "Industry Professional",
+      "en": "My biggest piece of advice is to be curious and ask lots of questions. Don't be afraid to admit what you don't know - that's how you learn. Also, build strong relationships with your engineering and design teams. They're your partners in success, and understanding their perspectives will make you a much better PM."
+    },
+    {
+      "speaker": "Student",
+      "en": "That's excellent advice. Thank you so much for sharing your insights, Mark. This has been incredibly valuable. Is there anything else you think would be helpful for me to know?"
+    },
+    {
+      "speaker": "Industry Professional",
+      "en": "You're very welcome! I'd also recommend joining PM communities like Product Hunt or local PM meetups. And don't hesitate to reach out if you have more questions as you progress in your career. I'm happy to help!"
+    },
+    {
+      "speaker": "Student",
+      "en": "Thank you so much, Mark! I really appreciate your time and generosity. This has given me a much clearer picture of what to expect and how to prepare. I'll definitely stay in touch!"
+    }
+  ]
+}

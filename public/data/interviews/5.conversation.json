@@ -1,0 +1,98 @@
+{
+  "id": 5,
+  "title": "Case Study Interview: Business Strategy and Problem Solving",
+  "dialogue": [
+    {
+      "speaker": "Case Interviewer",
+      "en": "Good morning! I'm Jennifer, a senior consultant. Today we'll work through a business case together. Are you ready to dive into some problem-solving?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Good morning, Jennifer! Yes, I'm excited to work through a case study with you. I'm ready to think through some business challenges."
+    },
+    {
+      "speaker": "Case Interviewer",
+      "en": "Perfect! Here's the case: Our client is a mid-sized retail company that's been experiencing declining sales for the past 18 months. They want us to help them turn this around. How would you approach this problem?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Great case! Let me start by understanding the scope and then break down the problem systematically. First, I'd like to clarify a few things about the company and their situation."
+    },
+    {
+      "speaker": "Case Interviewer",
+      "en": "Absolutely! What would you like to know?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "I'd like to understand their current market position, their target customer base, and whether this decline is affecting all products or specific categories. Also, what's happening in their competitive landscape?"
+    },
+    {
+      "speaker": "Case Interviewer",
+      "en": "Excellent questions! They're a regional retailer with 50 stores, primarily serving middle-income families. The decline is across all product categories, and they're facing increased competition from both online retailers and discount stores."
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Thank you! Now I can structure my analysis. I'd approach this by examining three main areas: external factors, internal operations, and strategic positioning. Let me start with external factors."
+    },
+    {
+      "speaker": "Case Interviewer",
+      "en": "Go ahead with your analysis."
+    },
+    {
+      "speaker": "Candidate",
+      "en": "For external factors, I'd analyze the competitive landscape, market trends, and customer behavior changes. The rise of e-commerce and discount retailers suggests they might be losing customers to convenience and price advantages."
+    },
+    {
+      "speaker": "Case Interviewer",
+      "en": "Good observation. What about internal factors?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "For internal factors, I'd examine their cost structure, operational efficiency, and customer experience. With 50 stores, they might have high fixed costs that make it difficult to compete on price. I'd also look at their inventory management and customer service quality."
+    },
+    {
+      "speaker": "Case Interviewer",
+      "en": "Excellent analysis. Now, what strategic options would you recommend?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "I'd recommend a three-pronged approach: First, optimize their physical retail experience to differentiate from online competitors. Second, develop an omnichannel strategy to meet customers where they are. Third, streamline operations to improve cost efficiency and potentially offer more competitive pricing."
+    },
+    {
+      "speaker": "Case Interviewer",
+      "en": "Great strategic thinking! How would you prioritize these initiatives?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "I'd prioritize based on impact and implementation timeline. Quick wins like improving customer service and optimizing inventory would come first. The omnichannel strategy would be medium-term, and operational restructuring would be long-term. This approach shows immediate progress while building toward sustainable competitive advantages."
+    },
+    {
+      "speaker": "Case Interviewer",
+      "en": "Excellent prioritization! How would you measure success?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "I'd track both leading and lagging indicators: customer satisfaction scores, store traffic, conversion rates, and ultimately sales growth. I'd also monitor operational metrics like inventory turnover and cost per transaction to ensure our improvements are sustainable."
+    },
+    {
+      "speaker": "Case Interviewer",
+      "en": "Perfect! You've shown excellent structured thinking and business acumen. Any questions about the case or our consulting approach?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Thank you! I'd love to learn more about how you typically work with clients to implement these types of strategic changes."
+    },
+    {
+      "speaker": "Case Interviewer",
+      "en": "Great question! We work very collaboratively with clients, providing both strategic guidance and hands-on support for implementation. We believe in building their capabilities so they can sustain improvements long after we're gone."
+    },
+    {
+      "speaker": "Candidate",
+      "en": "That sounds like a very effective approach. Thank you for the engaging case study, Jennifer!"
+    },
+    {
+      "speaker": "Case Interviewer",
+      "en": "You're very welcome! You've demonstrated excellent analytical thinking and business judgment. We'll be in touch soon with our decision. Good luck!"
+    }
+  ]
+}

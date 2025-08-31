@@ -7,7 +7,7 @@ export interface Word {
 export interface Sentence {
   id: number;
   en: string;
-  kn: string;
+  meaning: string;
 }
 
 export interface Phrase {

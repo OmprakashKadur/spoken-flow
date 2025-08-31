@@ -1,0 +1,12 @@
+[
+  { "id": 41, "phrase": "A piece of cake", "meaning": "something that is very easy to do" },
+  { "id": 42, "phrase": "Break a leg", "meaning": "good luck (used especially in theater)" },
+  { "id": 43, "phrase": "Come a long way", "meaning": "to make a lot of progress" },
+  { "id": 44, "phrase": "Get ahead", "meaning": "to make progress, especially in your career" },
+  { "id": 45, "phrase": "Hit the jackpot", "meaning": "to have great success or good luck" },
+  { "id": 46, "phrase": "Make it big", "meaning": "to become very successful" },
+  { "id": 47, "phrase": "On top of the world", "meaning": "feeling very happy and successful" },
+  { "id": 48, "phrase": "Pull it off", "meaning": "to succeed in doing something difficult" },
+  { "id": 49, "phrase": "Rise to the occasion", "meaning": "to successfully deal with a difficult situation" },
+  { "id": 50, "phrase": "Strike gold", "meaning": "to find or achieve something very valuable" }
+]

@@ -1,0 +1,12 @@
+[
+  { "id": 71, "phrase": "Ahead of schedule", "meaning": "earlier than planned" },
+  { "id": 72, "phrase": "Beat the clock", "meaning": "to finish something before the deadline" },
+  { "id": 73, "phrase": "In the nick of time", "meaning": "just in time; at the last possible moment" },
+  { "id": 74, "phrase": "Kill time", "meaning": "to do something to pass time while waiting" },
+  { "id": 75, "phrase": "Make up for lost time", "meaning": "to work harder to compensate for time that was wasted" },
+  { "id": 76, "phrase": "On time", "meaning": "at the scheduled time; punctual" },
+  { "id": 77, "phrase": "Save time", "meaning": "to do something in a way that takes less time" },
+  { "id": 78, "phrase": "Time flies", "meaning": "time passes very quickly" },
+  { "id": 79, "phrase": "Time is money", "meaning": "time is valuable and should not be wasted" },
+  { "id": 80, "phrase": "Waste time", "meaning": "to spend time doing something that is not useful" }
+]

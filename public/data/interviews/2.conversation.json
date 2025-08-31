@@ -1,17 +1,98 @@
 {
   "id": 2,
-  "title": "Technical Interview Conversation",
+  "title": "Behavioral Interview: Leadership and Team Management",
   "dialogue": [
-    { "speaker": "Interviewer", "en": "Hello! Let's start with a coding problem. Can you explain how you would implement a binary search?" },
-    { "speaker": "You", "en": "Hello! Binary search is an efficient algorithm for finding an element in a sorted array. It works by repeatedly dividing the search interval in half." },
-    { "speaker": "Interviewer", "en": "Great! Can you write the code for it?" },
-    { "speaker": "You", "en": "Sure! I'll write it in Python. The time complexity is O(log n) and space complexity is O(1)." },
-    { "speaker": "Interviewer", "en": "Excellent! Now, how would you handle edge cases?" },
-    { "speaker": "You", "en": "I would check if the array is empty, handle cases where the target is not found, and ensure the array is sorted before applying binary search." },
-    { "speaker": "Interviewer", "en": "Perfect! Let's move to system design. How would you design a URL shortener?" },
-    { "speaker": "You", "en": "I would use a hash function to generate short URLs, store mappings in a database, handle collisions, and implement features like analytics and expiration." },
-    { "speaker": "Interviewer", "en": "Great thinking! Any questions for me?" },
-    { "speaker": "You", "en": "Yes, I'd like to know about the team structure and the technologies you're currently using." },
-    { "speaker": "Interviewer", "en": "We're a small team using modern tech stack. Thank you for the great interview!" }
+    {
+      "speaker": "Interviewer",
+      "en": "Good afternoon! I'm Michael Chen, the Director of Operations. Today we'll be focusing on behavioral questions to understand how you've handled various situations in the past. Are you ready to begin?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Good afternoon, Michael! Yes, I'm ready and looking forward to sharing my experiences with you."
+    },
+    {
+      "speaker": "Interviewer",
+      "en": "Great! Let's start with a classic behavioral question. Can you tell me about a time when you had to lead a team through a difficult change or transition?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Absolutely! I led a team through a major software migration that affected our entire department. The change was challenging because it required learning new systems while maintaining our current operations. I started by clearly communicating the 'why' behind the change and how it would benefit everyone in the long run."
+    },
+    {
+      "speaker": "Interviewer",
+      "en": "That's a good start. What specific actions did you take to help your team adapt?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "I created a detailed transition plan with clear milestones and provided extensive training sessions. I also paired experienced team members with those who were struggling, creating a buddy system. Most importantly, I made myself available for one-on-one support and encouraged open communication about challenges."
+    },
+    {
+      "speaker": "Interviewer",
+      "en": "Excellent approach. What was the outcome, and what did you learn from this experience?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "The outcome was very positive. We completed the migration ahead of schedule, and the team became more cohesive through the process. I learned that people resist change less when they understand the purpose and feel supported throughout the journey. Regular check-ins and celebrating small wins were crucial for maintaining morale."
+    },
+    {
+      "speaker": "Interviewer",
+      "en": "Great insights! Now, tell me about a time when you had to resolve a conflict between team members."
+    },
+    {
+      "speaker": "Candidate",
+      "en": "I had two team members who disagreed on the approach to a project. One wanted to use a new technology, while the other preferred the proven method. I brought them together for a structured discussion where each could present their case. I facilitated the conversation to focus on the project goals rather than personal preferences."
+    },
+    {
+      "speaker": "Interviewer",
+      "en": "How did you handle the situation when emotions started running high?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "I acknowledged their feelings and reminded them that we were all working toward the same goal. I suggested we take a short break to cool down, then reconvened with a focus on finding common ground. I also asked each person to identify the benefits of the other's approach, which helped them see value in both perspectives."
+    },
+    {
+      "speaker": "Interviewer",
+      "en": "What was the final resolution?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "We ended up combining both approaches - using the proven method as the foundation while incorporating some innovative elements from the new technology. This hybrid solution was actually better than either original proposal. Both team members felt heard and valued, and the project was successful."
+    },
+    {
+      "speaker": "Interviewer",
+      "en": "That's a great example of win-win problem solving. One more question: how do you handle receiving negative feedback about your performance?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "I view feedback as a gift that helps me grow. When I receive negative feedback, I first listen carefully without interrupting or becoming defensive. I ask clarifying questions to make sure I understand the concerns. Then I reflect on the feedback and create an action plan to address the areas for improvement."
+    },
+    {
+      "speaker": "Interviewer",
+      "en": "Can you give me a specific example of when you received negative feedback and how you responded?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "My previous manager once told me that I was too quick to jump into solutions without fully understanding the problem. Initially, I was defensive, but I realized she was right. I started practicing active listening and asking more questions before proposing solutions. Within a few weeks, she noticed the improvement and gave me positive feedback on my approach."
+    },
+    {
+      "speaker": "Interviewer",
+      "en": "Perfect! That shows real growth mindset. Thank you for sharing these examples. Do you have any questions for me about the role or our company culture?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Yes, I'd love to know more about how your company approaches professional development and what opportunities there are for continued learning and growth."
+    },
+    {
+      "speaker": "Interviewer",
+      "en": "Excellent question! We have a strong culture of continuous learning with regular training programs, mentorship opportunities, and support for attending conferences and workshops. We believe in investing in our people's growth."
+    },
+    {
+      "speaker": "Candidate",
+      "en": "That sounds wonderful and aligns perfectly with my career goals. Thank you for this insightful conversation, Michael."
+    },
+    {
+      "speaker": "Interviewer",
+      "en": "You're very welcome! You've given us excellent examples of your leadership and problem-solving abilities. We'll be in touch soon with our decision. Have a great day!"
+    }
   ]
 }

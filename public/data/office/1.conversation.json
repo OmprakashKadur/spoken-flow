@@ -1,17 +1,86 @@
 {
   "id": 1,
-  "title": "Office Meeting Conversation",
+  "title": "Team Meeting: Project Planning and Collaboration",
   "dialogue": [
-    { "speaker": "Manager", "en": "Good morning team! Let's start our weekly standup. Sarah, what did you work on yesterday?" },
-    { "speaker": "Sarah", "en": "Good morning! I completed the user authentication module and started working on the dashboard design." },
-    { "speaker": "Manager", "en": "Great progress! John, how about you?" },
-    { "speaker": "John", "en": "I finished the API integration and fixed the bug in the search functionality. Today I'll work on performance optimization." },
-    { "speaker": "Manager", "en": "Excellent! Mike, any blockers?" },
-    { "speaker": "Mike", "en": "I'm waiting for the design approval from the UX team. Once I get that, I can proceed with the frontend implementation." },
-    { "speaker": "Manager", "en": "I'll follow up with the UX team. Any other updates or concerns?" },
-    { "speaker": "Sarah", "en": "I have a question about the new requirements. Should we prioritize the mobile version first?" },
-    { "speaker": "Manager", "en": "Good point! Let's discuss that in detail after the standup. Any other business?" },
-    { "speaker": "Team", "en": "No, that's all for today." },
-    { "speaker": "Manager", "en": "Perfect! Let's have a great day everyone!" }
+    {
+      "speaker": "Team Lead",
+      "en": "Good morning, everyone! Thanks for joining our weekly team meeting. Let's start with a quick check-in. How is everyone doing this week?"
+    },
+    {
+      "speaker": "Team Member 1",
+      "en": "Good morning! I'm doing well. I've been working on the user authentication module and made good progress. I should have the basic functionality ready for testing by Friday."
+    },
+    {
+      "speaker": "Team Member 2",
+      "en": "Hi everyone! I'm feeling a bit overwhelmed with the current workload. I have three different projects that all need attention this week, and I'm not sure how to prioritize them effectively."
+    },
+    {
+      "speaker": "Team Lead",
+      "en": "Thanks for the honest feedback. Let's address that prioritization challenge. Can you walk us through what you're working on and their respective deadlines?"
+    },
+    {
+      "speaker": "Team Member 2",
+      "en": "Sure! I have the database optimization project that's due Friday, the API documentation update that marketing needs by Wednesday, and the bug fixes for the mobile app that are blocking the QA team."
+    },
+    {
+      "speaker": "Team Lead",
+      "en": "That's a lot to juggle. Let me help you prioritize. The mobile app bug fixes are blocking other teams, so those should come first. The API documentation is time-sensitive for marketing. The database optimization can probably wait until next week. Does that sound reasonable?"
+    },
+    {
+      "speaker": "Team Member 2",
+      "en": "Yes, that makes much more sense! Thank you for the guidance. I'll focus on the bug fixes today and tomorrow, then tackle the API documentation. The database work can wait."
+    },
+    {
+      "speaker": "Team Member 3",
+      "en": "I can help with the API documentation if needed. I'm ahead of schedule on my current tasks and would be happy to collaborate."
+    },
+    {
+      "speaker": "Team Lead",
+      "en": "That's excellent teamwork! Let's pair you two up on the API documentation. Now, let's move to our main agenda item. We need to plan the next sprint. What are your thoughts on our current priorities?"
+    },
+    {
+      "speaker": "Team Member 1",
+      "en": "I think we should focus on completing the authentication module before starting new features. It's a foundational piece that other team members are waiting for."
+    },
+    {
+      "speaker": "Team Member 4",
+      "en": "I agree with that priority. I'm also concerned about technical debt. We've been moving fast to meet deadlines, but I think we need to allocate some time for refactoring and testing improvements."
+    },
+    {
+      "speaker": "Team Lead",
+      "en": "Great points from both of you. Let's structure the next sprint with 70% new feature development, 20% technical debt reduction, and 10% buffer for unexpected issues. Does that balance sound right to everyone?"
+    },
+    {
+      "speaker": "Team Member 2",
+      "en": "That sounds like a good balance. I'd like to use some of that technical debt time to improve our testing framework. It would help prevent the kind of bugs we've been dealing with."
+    },
+    {
+      "speaker": "Team Lead",
+      "en": "Excellent idea! That's exactly the kind of technical debt work that pays off in the long run. Let's add that to the sprint plan. Any other concerns or suggestions for the upcoming sprint?"
+    },
+    {
+      "speaker": "Team Member 3",
+      "en": "I'd like to suggest we schedule a code review session this week. I think we could all benefit from sharing knowledge and catching potential issues early."
+    },
+    {
+      "speaker": "Team Lead",
+      "en": "That's a great suggestion! Let's schedule it for Thursday afternoon. Everyone should come prepared to review at least one piece of code. Any other business before we wrap up?"
+    },
+    {
+      "speaker": "Team Member 1",
+      "en": "Just a quick question about the authentication module testing. Should I coordinate with the QA team to set up test scenarios, or do you want to handle that coordination?"
+    },
+    {
+      "speaker": "Team Lead",
+      "en": "Good question! Let me coordinate with QA to set up the testing framework. You focus on completing the functionality, and I'll make sure the testing infrastructure is ready when you are. Sound good?"
+    },
+    {
+      "speaker": "Team Member 1",
+      "en": "Perfect! That will help me stay focused on development. Thanks for taking that off my plate."
+    },
+    {
+      "speaker": "Team Lead",
+      "en": "Great! Let's wrap up here. Remember, the code review is Thursday at 2 PM, and I'll send out the updated sprint plan by end of day. Any questions or concerns, feel free to reach out. Have a productive week, everyone!"
+    }
   ]
 }

@@ -1,0 +1,12 @@
+[
+  { "id": 51, "phrase": "All hands on deck", "meaning": "everyone needs to help with a task" },
+  { "id": 52, "phrase": "Build bridges", "meaning": "to improve relationships between people or groups" },
+  { "id": 53, "phrase": "Get along like a house on fire", "meaning": "to become friends quickly and get along very well" },
+  { "id": 54, "phrase": "In the same boat", "meaning": "in the same difficult situation" },
+  { "id": 55, "phrase": "Join forces", "meaning": "to work together to achieve something" },
+  { "id": 56, "phrase": "Lend a hand", "meaning": "to help someone with something" },
+  { "id": 57, "phrase": "Pull together", "meaning": "to work as a team to achieve something" },
+  { "id": 58, "phrase": "Team player", "meaning": "someone who works well with others in a team" },
+  { "id": 59, "phrase": "Two heads are better than one", "meaning": "it's better to work with someone else than alone" },
+  { "id": 60, "phrase": "United we stand, divided we fall", "meaning": "we are stronger when we work together" }
+]

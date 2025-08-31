@@ -1,0 +1,90 @@
+{
+  "id": 4,
+  "title": "Technical Interview: Problem-Solving and Coding",
+  "dialogue": [
+    {
+      "speaker": "Technical Lead",
+      "en": "Hi! I'm Alex, the technical lead for our development team. Today we'll be working through some coding problems together. Are you comfortable with Python?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Hi Alex! Yes, Python is one of my primary languages. I'm ready to tackle some coding challenges with you."
+    },
+    {
+      "speaker": "Technical Lead",
+      "en": "Great! Let's start with a problem. You have an array of integers, and you need to find the two numbers that add up to a specific target. Can you implement a solution?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Absolutely! This is a classic two-sum problem. I can think of a few approaches. The brute force approach would be to use nested loops, but that would be O(n²) time complexity. A more efficient solution would use a hash map for O(n) time complexity."
+    },
+    {
+      "speaker": "Technical Lead",
+      "en": "Excellent! Can you implement the hash map solution?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Sure! I'll write it out: def two_sum(nums, target): seen = {} for i, num in enumerate(nums): complement = target - num if complement in seen: return [seen[complement], i] seen[num] = i return []"
+    },
+    {
+      "speaker": "Technical Lead",
+      "en": "Perfect! Can you walk me through how this works?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Sure! As I iterate through the array, I store each number and its index in the hash map. For each number, I calculate what complement would be needed to reach the target. If I've already seen that complement, I return both indices. This gives us O(n) time and O(n) space complexity."
+    },
+    {
+      "speaker": "Technical Lead",
+      "en": "Great explanation! Now let's move to a system design question. How would you design a URL shortening service like bit.ly?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Great question! Let me break this down. I'd need a service that takes long URLs and generates short ones. For the core functionality, I'd use a hash function to generate short codes, store URL mappings in a database, and handle redirects."
+    },
+    {
+      "speaker": "Technical Lead",
+      "en": "Good start! What about handling collisions and scalability?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "For collisions, I'd implement a retry mechanism with a different hash or add a random component. For scalability, I'd use a distributed database, implement caching with Redis, and potentially use a CDN for global distribution. I'd also need to consider rate limiting and analytics tracking."
+    },
+    {
+      "speaker": "Technical Lead",
+      "en": "Excellent thinking! One more question: how would you handle a situation where your code is working in development but failing in production?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Great question! I'd start by checking the logs and monitoring systems to understand the error. I'd compare the development and production environments for differences in configuration, data, or dependencies. I'd also use debugging tools and potentially add more logging to identify the root cause."
+    },
+    {
+      "speaker": "Technical Lead",
+      "en": "What if the issue is intermittent and hard to reproduce?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "For intermittent issues, I'd implement comprehensive logging and monitoring to capture the state when the problem occurs. I'd also use distributed tracing to understand the request flow. Sometimes adding retry logic or circuit breakers can help identify patterns in the failures."
+    },
+    {
+      "speaker": "Technical Lead",
+      "en": "Great problem-solving approach! You've shown strong technical skills and logical thinking. Do you have any questions about our tech stack or development processes?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Yes, I'd love to learn more about your development workflow, testing practices, and how you handle code reviews and deployments."
+    },
+    {
+      "speaker": "Technical Lead",
+      "en": "Excellent questions! We use Git flow with feature branches, automated testing with CI/CD, and peer code reviews for all changes. We deploy multiple times per day using blue-green deployments. Any other questions?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "That sounds like a great development culture. I'm excited about the opportunity to work with such a professional team. Thank you for the technical discussion, Alex!"
+    },
+    {
+      "speaker": "Technical Lead",
+      "en": "You're very welcome! You've demonstrated excellent technical skills and problem-solving abilities. We'll be in touch soon with our decision. Good luck!"
+    }
+  ]
+}

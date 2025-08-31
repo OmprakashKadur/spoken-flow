@@ -1,10 +1,10 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useParams, useRouter } from 'next/navigation';
+import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { ContentType, Word, Sentence, Phrase, Speech, Conversation } from '@/types';
-import { loadData, isLongContent, categories } from '@/utils/data';
+import { loadData, isLongContent, categories, preloadNextPage, clearCategoryCache } from '@/utils/data';
 import { getLastVisitedPage, updateLastVisitedPage } from '@/utils/storage';
 import Paginator from '@/components/Paginator';
 import MarkButton from '@/components/MarkButton';
@@ -14,14 +14,12 @@ import DarkModeToggle from '@/components/DarkModeToggle';
 
 export default function CategoryPage() {
   const params = useParams();
-  const router = useRouter();
   const category = params.category as string;
   
   const [currentPage, setCurrentPage] = useState(1);
   const [data, setData] = useState<ContentType[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [showMarkedOnly, setShowMarkedOnly] = useState(false);
-  const [fontSize, setFontSize] = useState(16);
+  const [fontSize] = useState(16);
   const [scrollSpeed, setScrollSpeed] = useState(0.7);
 
   const categoryInfo = categories.find(c => c.id === category);
@@ -31,13 +29,22 @@ export default function CategoryPage() {
       const lastPage = getLastVisitedPage(category);
       setCurrentPage(lastPage);
       loadCategoryData(lastPage);
+      // Preload next page for better performance
+      preloadNextPage(category, lastPage);
     }
+    
+    // Cleanup: clear cache when switching categories
+    return () => {
+      clearCategoryCache(category);
+    };
   }, [category]);
 
   useEffect(() => {
     if (categoryInfo) {
       loadCategoryData(currentPage);
       updateLastVisitedPage(category, currentPage);
+      // Preload next page for better performance
+      preloadNextPage(category, currentPage);
     }
   }, [currentPage, category]);
 
@@ -45,6 +52,11 @@ export default function CategoryPage() {
     setIsLoading(true);
     try {
       const categoryData = await loadData(category, page);
+      if (categoryData.length === 0) {
+        // Page doesn't exist, show under construction message
+        setData([]);
+        return;
+      }
       setData(categoryData);
     } catch (error) {
       console.error('Error loading category data:', error);
@@ -170,6 +182,24 @@ export default function CategoryPage() {
           <div className="flex justify-center items-center py-12">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
           </div>
+        ) : data.length === 0 ? (
+          <div className="text-center py-16">
+            <div className="max-w-md mx-auto">
+              <div className="text-8xl mb-6">🚧</div>
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Page Under Construction
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                This page is currently being developed with fresh content. 
+                Our team is working hard to bring you more learning materials!
+              </p>
+              <div className="flex items-center justify-center space-x-2 text-sm text-gray-500 dark:text-gray-400">
+                <span className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></span>
+                <span>Coming Soon</span>
+                <span className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></span>
+              </div>
+            </div>
+          </div>
         ) : (
           <>
             {isLong ? (
@@ -210,8 +240,8 @@ export default function CategoryPage() {
                                  key={index}
                                  className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm"
                                >
-                                 <div className="flex items-start space-x-3">
-                                   <span className="font-semibold text-blue-600 dark:text-blue-400 min-w-[60px]">
+                                 <div className="flex items-start space-x-3 gap-2">
+                                   <span className="font-semibold text-blue-600 dark:text-blue-400 min-w-[75px]">
                                      {line.speaker}:
                                    </span>
                                    <p className="text-gray-900 dark:text-white leading-relaxed">
@@ -255,7 +285,7 @@ export default function CategoryPage() {
                         </div>
                       </div>
                     );
-                  } else if ('en' in item && 'kn' in item) {
+                  } else if ('en' in item && 'meaning' in item) {
                     const sentence = item as Sentence;
                     return (
                       <div
@@ -268,7 +298,7 @@ export default function CategoryPage() {
                               {sentence.en}
                             </p>
                             <p className="text-gray-600 dark:text-gray-400">
-                              {sentence.kn}
+                              {sentence.meaning}
                             </p>
                           </div>
                           <MarkButton category={category} id={sentence.id} />

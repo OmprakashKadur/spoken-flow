@@ -1,0 +1,12 @@
+[
+  { "id": 11, "phrase": "Bottom line", "meaning": "the most important fact in a situation" },
+  { "id": 12, "phrase": "Cut corners", "meaning": "to do something in the easiest, cheapest, or fastest way, often ignoring rules or standards" },
+  { "id": 13, "phrase": "Get down to business", "meaning": "to start talking about the important matters" },
+  { "id": 14, "phrase": "In the loop", "meaning": "informed about what is happening" },
+  { "id": 15, "phrase": "Learn the ropes", "meaning": "to learn how to do a job or activity" },
+  { "id": 16, "phrase": "Move the goalposts", "meaning": "to change the rules or targets in a situation" },
+  { "id": 17, "phrase": "On the back burner", "meaning": "not being dealt with urgently; postponed" },
+  { "id": 18, "phrase": "Pull strings", "meaning": "to use influence to get something done" },
+  { "id": 19, "phrase": "Square one", "meaning": "the beginning; back to the starting point" },
+  { "id": 20, "phrase": "Take the bull by the horns", "meaning": "to deal with a difficult situation directly and with determination" }
+]

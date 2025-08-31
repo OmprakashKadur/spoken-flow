@@ -1,0 +1,62 @@
+{
+  "id": 3,
+  "title": "Salary Negotiation: Securing Your Worth",
+  "dialogue": [
+    {
+      "speaker": "Hiring Manager",
+      "en": "Thank you for coming in today! We're very impressed with your background and would like to offer you the position. Let's discuss the compensation package."
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Thank you! I'm excited about this opportunity. I'd be happy to discuss the compensation details."
+    },
+    {
+      "speaker": "Hiring Manager",
+      "en": "Great! We're offering a base salary of $85,000, plus our standard benefits package including health insurance, 401(k) matching, and 20 days of PTO. What are your thoughts on this offer?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "I appreciate the offer and I'm very interested in joining your team. However, based on my research of the market and my experience level, I was expecting a base salary in the range of $95,000 to $100,000."
+    },
+    {
+      "speaker": "Hiring Manager",
+      "en": "I understand your perspective. Can you help me understand what factors you're considering in your salary expectations?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Absolutely! I have five years of experience in this field, including leadership roles on major projects. I've researched salary ranges for similar positions in our area, and I'm also bringing specialized skills in emerging technologies that would be valuable to your team."
+    },
+    {
+      "speaker": "Hiring Manager",
+      "en": "That's helpful context. While I can't go to $100,000, I might be able to increase the offer to $90,000. Would that work for you?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "I appreciate the flexibility. Could we also discuss other aspects of the compensation package? For example, I'm very interested in professional development opportunities and potential performance bonuses."
+    },
+    {
+      "speaker": "Hiring Manager",
+      "en": "Great idea! We do have an annual performance bonus program that typically ranges from 10-20% of base salary. We also provide a generous learning budget for courses and conferences."
+    },
+    {
+      "speaker": "Candidate",
+      "en": "That sounds very appealing. Given the bonus potential and learning opportunities, I think we can find common ground. Would you consider $92,000 as a starting point?"
+    },
+    {
+      "speaker": "Hiring Manager",
+      "en": "I think we can make that work. Let me confirm with HR, but I believe we can offer $92,000 base salary, plus the performance bonus program and learning budget. Does that sound fair?"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Yes, that sounds like a fair and competitive package. I'm excited to accept the offer and join your team. When would you like me to start?"
+    },
+    {
+      "speaker": "Hiring Manager",
+      "en": "Excellent! We'd love to have you start in two weeks. I'll have HR send over the formal offer letter with all the details. Welcome to the team!"
+    },
+    {
+      "speaker": "Candidate",
+      "en": "Thank you so much! I'm looking forward to contributing to the team's success and growing with the company."
+    }
+  ]
+}

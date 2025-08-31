@@ -1,0 +1,12 @@
+[
+  { "id": 91, "phrase": "Actions speak louder than words", "meaning": "what you do is more important than what you say" },
+  { "id": 92, "phrase": "Break the silence", "meaning": "to start talking about something that people have been avoiding" },
+  { "id": 93, "phrase": "Get the message", "meaning": "to understand what someone is trying to tell you" },
+  { "id": 94, "phrase": "Have a way with words", "meaning": "to be good at speaking or writing" },
+  { "id": 95, "phrase": "Keep in touch", "meaning": "to maintain contact with someone" },
+  { "id": 96, "phrase": "Let the cat out of the bag", "meaning": "to reveal a secret" },
+  { "id": 97, "phrase": "Put it in writing", "meaning": "to write something down to make it official" },
+  { "id": 98, "phrase": "Speak volumes", "meaning": "to reveal a lot about something" },
+  { "id": 99, "phrase": "Take the words right out of my mouth", "meaning": "to say exactly what I was thinking" },
+  { "id": 100, "phrase": "You can say that again", "meaning": "I completely agree with what you just said" }
+]

@@ -1,0 +1,12 @@
+[
+  { "id": 31, "phrase": "At a crossroads", "meaning": "at a point where you have to make an important decision" },
+  { "id": 32, "phrase": "Between a rock and a hard place", "meaning": "in a difficult situation with no good choices" },
+  { "id": 33, "phrase": "Bite the bullet", "meaning": "to do something difficult or unpleasant that you have been avoiding" },
+  { "id": 34, "phrase": "Cross that bridge when you come to it", "meaning": "to deal with a problem when it happens, not before" },
+  { "id": 35, "phrase": "Face the music", "meaning": "to accept the consequences of your actions" },
+  { "id": 36, "phrase": "Get to the bottom of", "meaning": "to find out the real cause of something" },
+  { "id": 37, "phrase": "In hot water", "meaning": "in trouble or difficulty" },
+  { "id": 38, "phrase": "Make ends meet", "meaning": "to have enough money to pay for basic needs" },
+  { "id": 39, "phrase": "Out of the woods", "meaning": "out of danger or difficulty" },
+  { "id": 40, "phrase": "Put two and two together", "meaning": "to figure something out from the information you have" }
+]

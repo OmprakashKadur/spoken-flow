@@ -9,13 +9,17 @@ interface RecorderProps {
 export default function Recorder({ className = '' }: RecorderProps) {
   const [isRecording, setIsRecording] = useState(false);
   const [audioURL, setAudioURL] = useState<string | null>(null);
+  const [videoURL, setVideoURL] = useState<string | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [recordingTime, setRecordingTime] = useState(0);
+  const [recordingMode, setRecordingMode] = useState<'audio' | 'video'>('audio');
   
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
-  const timerRef = useRef<NodeJS.Timeout>();
+  const videoChunksRef = useRef<Blob[]>([]);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
     return () => {
@@ -27,18 +31,41 @@ export default function Recorder({ className = '' }: RecorderProps) {
 
   const startRecording = async () => {
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const constraints = recordingMode === 'audio' 
+        ? { audio: true }
+        : { audio: true, video: true };
+      
+      const stream = await navigator.mediaDevices.getUserMedia(constraints);
       mediaRecorderRef.current = new MediaRecorder(stream);
-      audioChunksRef.current = [];
+      
+      if (recordingMode === 'audio') {
+        audioChunksRef.current = [];
+        videoChunksRef.current = [];
+      } else {
+        videoChunksRef.current = [];
+        audioChunksRef.current = [];
+      }
 
       mediaRecorderRef.current.ondataavailable = (event) => {
-        audioChunksRef.current.push(event.data);
+        if (recordingMode === 'audio') {
+          audioChunksRef.current.push(event.data);
+        } else {
+          videoChunksRef.current.push(event.data);
+        }
       };
 
       mediaRecorderRef.current.onstop = () => {
-        const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/wav' });
-        const audioUrl = URL.createObjectURL(audioBlob);
-        setAudioURL(audioUrl);
+        if (recordingMode === 'audio') {
+          const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/wav' });
+          const audioUrl = URL.createObjectURL(audioBlob);
+          setAudioURL(audioUrl);
+          setVideoURL(null);
+        } else {
+          const videoBlob = new Blob(videoChunksRef.current, { type: 'video/webm' });
+          const videoUrl = URL.createObjectURL(videoBlob);
+          setVideoURL(videoUrl);
+          setAudioURL(null);
+        }
         stream.getTracks().forEach(track => track.stop());
       };
 
@@ -52,7 +79,7 @@ export default function Recorder({ className = '' }: RecorderProps) {
       }, 1000);
     } catch (error) {
       console.error('Error starting recording:', error);
-      alert('Unable to access microphone. Please check permissions.');
+      alert(`Unable to access ${recordingMode === 'audio' ? 'microphone' : 'camera'}. Please check permissions.`);
     }
   };
 
@@ -85,7 +112,12 @@ export default function Recorder({ className = '' }: RecorderProps) {
     if (audioURL) {
       const link = document.createElement('a');
       link.href = audioURL;
-      link.download = `recording-${new Date().toISOString().slice(0, 19)}.wav`;
+      link.download = `audio-recording-${new Date().toISOString().slice(0, 19)}.wav`;
+      link.click();
+    } else if (videoURL) {
+      const link = document.createElement('a');
+      link.href = videoURL;
+      link.download = `video-recording-${new Date().toISOString().slice(0, 19)}.webm`;
       link.click();
     }
   };
@@ -94,6 +126,10 @@ export default function Recorder({ className = '' }: RecorderProps) {
     if (audioURL) {
       URL.revokeObjectURL(audioURL);
       setAudioURL(null);
+    }
+    if (videoURL) {
+      URL.revokeObjectURL(videoURL);
+      setVideoURL(null);
     }
     setRecordingTime(0);
   };
@@ -107,12 +143,38 @@ export default function Recorder({ className = '' }: RecorderProps) {
   return (
     <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 ${className}`}>
       <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-        🎤 Audio Recorder
+        🎤 Audio/Video Recorder
       </h3>
+
+      {/* Recording Mode Toggle */}
+      <div className="mb-4">
+        <div className="flex bg-gray-200 dark:bg-gray-700 rounded-lg p-1">
+          <button
+            onClick={() => setRecordingMode('audio')}
+            className={`flex-1 py-2 px-4 rounded-md text-sm font-medium transition-colors ${
+              recordingMode === 'audio'
+                ? 'bg-white dark:bg-gray-600 text-gray-900 dark:text-white shadow-sm'
+                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+            }`}
+          >
+            🎤 Audio
+          </button>
+          <button
+            onClick={() => setRecordingMode('video')}
+            className={`flex-1 py-2 px-4 rounded-md text-sm font-medium transition-colors ${
+              recordingMode === 'video'
+                ? 'bg-white dark:bg-gray-600 text-gray-900 dark:text-white shadow-sm'
+                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+            }`}
+          >
+            📹 Video
+          </button>
+        </div>
+      </div>
 
       {/* Recording Controls */}
       <div className="space-y-4">
-        {!isRecording && !audioURL && (
+        {!isRecording && !audioURL && !videoURL && (
           <button
             onClick={startRecording}
             className="w-full bg-red-500 hover:bg-red-600 text-white font-medium py-3 px-4 rounded-lg transition-colors flex items-center justify-center space-x-2"
@@ -120,7 +182,7 @@ export default function Recorder({ className = '' }: RecorderProps) {
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
               <circle cx="10" cy="10" r="6" />
             </svg>
-            <span>Start Recording</span>
+            <span>Start {recordingMode === 'audio' ? 'Audio' : 'Video'} Recording</span>
           </button>
         )}
 
@@ -187,7 +249,7 @@ export default function Recorder({ className = '' }: RecorderProps) {
                 className="flex-1 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center space-x-2"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M3 4h16" />
                 </svg>
                 <span>Discard</span>
               </button>
@@ -198,6 +260,50 @@ export default function Recorder({ className = '' }: RecorderProps) {
               className="w-full bg-gray-500 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-colors"
             >
               🎤 Record Again
+            </button>
+          </div>
+        )}
+
+        {/* Video Controls */}
+        {videoURL && (
+          <div className="space-y-4">
+            <video 
+              ref={videoRef} 
+              src={videoURL} 
+              controls 
+              className="w-full rounded-lg"
+              onPlay={() => setIsPlaying(true)}
+              onPause={() => setIsPlaying(false)}
+              onEnded={() => setIsPlaying(false)}
+            />
+            
+            <div className="flex space-x-2">
+              <button
+                onClick={downloadRecording}
+                className="flex-1 bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center space-x-2"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                <span>Download</span>
+              </button>
+
+              <button
+                onClick={discardRecording}
+                className="flex-1 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center space-x-2"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M3 4h16" />
+                </svg>
+                <span>Discard</span>
+              </button>
+            </div>
+
+            <button
+              onClick={startRecording}
+              className="w-full bg-gray-500 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+            >
+              📹 Record Again
             </button>
           </div>
         )}

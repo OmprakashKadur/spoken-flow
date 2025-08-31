@@ -1,0 +1,98 @@
+{
+  "id": 7,
+  "title": "Strategic Planning: Setting Company Direction and Goals",
+  "dialogue": [
+    {
+      "speaker": "CEO",
+      "en": "Good morning, everyone. Welcome to our annual strategic planning session. Today we're going to review our current position, discuss market opportunities, and set our strategic direction for the next three years. Let's start with a review of where we are today."
+    },
+    {
+      "speaker": "CFO",
+      "en": "Thank you for bringing us together. From a financial perspective, we're in a strong position. We've achieved 25% revenue growth this year, our profit margins are healthy at 18%, and we have solid cash reserves for strategic investments."
+    },
+    {
+      "speaker": "CTO",
+      "en": "Technically, we're well-positioned but facing some challenges. Our current platform is solid, but we're starting to see performance issues as we scale. We need to invest in infrastructure improvements and potentially consider a platform migration in the next 18 months."
+    },
+    {
+      "speaker": "CMO",
+      "en": "From a market perspective, we're seeing significant opportunities in the enterprise segment. Our SMB business is strong, but enterprise customers are looking for more sophisticated solutions and are willing to pay premium prices."
+    },
+    {
+      "speaker": "CEO",
+      "en": "Excellent overview. Now let's discuss our strategic options. We have three main directions to consider: expanding our enterprise presence, diversifying into new markets, or doubling down on our current SMB focus. What are your thoughts?"
+    },
+    {
+      "speaker": "Head of Sales",
+      "en": "I strongly recommend focusing on enterprise expansion. We're already getting inbound interest from larger companies, and our current SMB success gives us credibility. The enterprise market could triple our revenue potential."
+    },
+    {
+      "speaker": "Product Manager",
+      "en": "I agree with the enterprise focus, but I want to raise a concern about our ability to execute. Enterprise customers have very different needs - they require more customization, better security, and comprehensive support. Are we ready for that level of complexity?"
+    },
+    {
+      "speaker": "CTO",
+      "en": "That's a valid concern. We'd need to significantly upgrade our platform architecture, implement enterprise-grade security, and build out our support infrastructure. This would require substantial investment and probably 12-18 months of development."
+    },
+    {
+      "speaker": "CFO",
+      "en": "From a financial perspective, I can support the enterprise expansion if we do it right. We have the capital, and the potential returns justify the investment. But we need to be realistic about the timeline and resource requirements."
+    },
+    {
+      "speaker": "CEO",
+      "en": "Good points all around. Let me ask a different question: what if we took a hybrid approach? We could maintain our SMB focus while gradually building enterprise capabilities, testing the market with a few key enterprise customers first."
+    },
+    {
+      "speaker": "CMO",
+      "en": "That's a smart approach! We could start with a pilot program, working with 2-3 enterprise customers to understand their needs and build the right features. This would reduce our risk and give us valuable market insights."
+    },
+    {
+      "speaker": "Head of Sales",
+      "en": "I like the pilot approach, but I think we need to be more aggressive. The enterprise market is moving fast, and if we wait too long, we'll miss the opportunity. I suggest we commit to full enterprise expansion but phase it over 18 months."
+    },
+    {
+      "speaker": "Product Manager",
+      "en": "I think we need to consider our competitive position. What are our key differentiators, and how do they translate to the enterprise market? We need to understand what makes us unique before we can sell effectively to larger customers."
+    },
+    {
+      "speaker": "CEO",
+      "en": "Excellent strategic thinking. Let's analyze our competitive advantages. What do you think sets us apart in the market?"
+    },
+    {
+      "speaker": "CMO",
+      "en": "Our key differentiators are ease of use, rapid implementation, and exceptional customer support. These are valuable to enterprise customers too, but they also need enterprise-grade security, scalability, and integration capabilities."
+    },
+    {
+      "speaker": "CTO",
+      "en": "We can build those enterprise capabilities, but we need to maintain our core strengths. The challenge is scaling our user experience and support quality while adding enterprise complexity. It's a delicate balance."
+    },
+    {
+      "speaker": "CEO",
+      "en": "Perfect! Now let's set our strategic priorities. Based on this discussion, I propose we focus on three key areas: First, expand into the enterprise market through a phased approach. Second, maintain and strengthen our SMB leadership position. Third, invest in platform scalability and security."
+    },
+    {
+      "speaker": "CFO",
+      "en": "I can support that strategy. What are the financial implications? How much investment are we talking about, and what's our expected return timeline?"
+    },
+    {
+      "speaker": "CEO",
+      "en": "Great question. Let's develop a detailed financial plan. I suggest we allocate 40% of our investment budget to enterprise expansion, 30% to platform improvements, and 30% to maintaining our SMB business. We should expect a 2-3 year return on investment."
+    },
+    {
+      "speaker": "Head of Sales",
+      "en": "That timeline works for me. I'd like to start the enterprise pilot program within the next quarter. We can identify 2-3 potential enterprise customers and begin building the relationships."
+    },
+    {
+      "speaker": "CEO",
+      "en": "Excellent! Let's create an action plan. I want to see a detailed roadmap for the next 18 months, including milestones, resource requirements, and success metrics. We'll review this plan monthly and adjust as needed."
+    },
+    {
+      "speaker": "Product Manager",
+      "en": "I'll coordinate with the technical team to create the development roadmap. We need to prioritize which enterprise features to build first and ensure we maintain quality throughout the process."
+    },
+    {
+      "speaker": "CEO",
+      "en": "Perfect! This has been an excellent strategic planning session. We've identified our direction, understood the challenges, and created a clear path forward. Let's reconvene next week to review the detailed action plans. Great work, everyone!"
+    }
+  ]
+}

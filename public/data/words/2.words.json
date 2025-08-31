@@ -1,12 +1,12 @@
 [
-  { "id": 11, "word": "Motivation", "meaning": "the reason for doing something" },
-  { "id": 12, "word": "Achievement", "meaning": "something accomplished successfully" },
-  { "id": 13, "word": "Challenge", "meaning": "a difficult task or problem" },
-  { "id": 14, "word": "Success", "meaning": "achieving your goals" },
-  { "id": 15, "word": "Growth", "meaning": "the process of developing" },
-  { "id": 16, "word": "Learning", "meaning": "gaining knowledge or skills" },
-  { "id": 17, "word": "Practice", "meaning": "repeated exercise to improve skills" },
-  { "id": 18, "word": "Improvement", "meaning": "becoming better at something" },
-  { "id": 19, "word": "Focus", "meaning": "concentrating attention on something" },
-  { "id": 20, "word": "Determination", "meaning": "firmness of purpose" }
+  { "id": 11, "word": "Diplomatic", "meaning": "tactful and skilled in dealing with sensitive situations" },
+  { "id": 12, "word": "Articulate", "meaning": "to pronounce words clearly and distinctly" },
+  { "id": 13, "word": "Eloquent", "meaning": "expressing yourself clearly and persuasively" },
+  { "id": 14, "word": "Persuasive", "meaning": "able to convince others through logical reasoning" },
+  { "id": 15, "word": "Articulate", "meaning": "to express thoughts and feelings clearly" },
+  { "id": 16, "word": "Engaging", "meaning": "interesting and able to capture attention" },
+  { "id": 17, "word": "Authentic", "meaning": "genuine and true to yourself" },
+  { "id": 18, "word": "Charismatic", "meaning": "having natural charm and leadership qualities" },
+  { "id": 19, "word": "Influential", "meaning": "having the power to affect decisions and opinions" },
+  { "id": 20, "word": "Compelling", "meaning": "so convincing that it's impossible to ignore" }
 ]

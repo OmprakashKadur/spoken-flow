@@ -1,0 +1,12 @@
+[
+  { "id": 61, "phrase": "A learning curve", "meaning": "the rate at which you learn something new" },
+  { "id": 62, "phrase": "Back to basics", "meaning": "to return to the fundamental principles" },
+  { "id": 63, "phrase": "Get the hang of", "meaning": "to learn how to do something" },
+  { "id": 64, "phrase": "Hit the books", "meaning": "to study hard" },
+  { "id": 65, "phrase": "Learn the hard way", "meaning": "to learn something through experience, often through mistakes" },
+  { "id": 66, "phrase": "Pick up", "meaning": "to learn something without formal training" },
+  { "id": 67, "phrase": "Practice makes perfect", "meaning": "repeating something regularly makes you better at it" },
+  { "id": 68, "phrase": "Start from scratch", "meaning": "to begin something from the beginning" },
+  { "id": 69, "phrase": "Take it step by step", "meaning": "to do something gradually, one part at a time" },
+  { "id": 70, "phrase": "You can't teach an old dog new tricks", "meaning": "it's difficult to change someone's habits or way of thinking" }
+]

@@ -92,7 +92,7 @@ export default function Home() {
       <footer className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-700 mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600 dark:text-gray-400">
-            <p>© 2024 Spoken Flow. Built with Next.js and TailwindCSS.</p>
+            <p>© {new Date().getFullYear()} Spoken Flow. Built with Next.js and TailwindCSS.</p>
           </div>
         </div>
       </footer>

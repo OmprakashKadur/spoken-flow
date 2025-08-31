@@ -1,12 +1,12 @@
 [
-  { "id": 1, "phrase": "Break the ice", "meaning": "to start a conversation in a social situation" },
+  { "id": 1, "phrase": "Break the ice", "meaning": "to start a conversation in a social situation, especially when people don't know each other" },
   { "id": 2, "phrase": "Hit the nail on the head", "meaning": "to describe exactly what is causing a situation or problem" },
   { "id": 3, "phrase": "Let's call it a day", "meaning": "to stop working for the day" },
-  { "id": 4, "phrase": "Get the ball rolling", "meaning": "to start something" },
-  { "id": 5, "phrase": "Think on your feet", "meaning": "to think and react quickly" },
-  { "id": 6, "phrase": "Pull yourself together", "meaning": "to become calm and organized" },
-  { "id": 7, "phrase": "Give it a shot", "meaning": "to try something" },
-  { "id": 8, "phrase": "Keep your chin up", "meaning": "to stay positive" },
+  { "id": 4, "phrase": "Get the ball rolling", "meaning": "to start something, especially a discussion or process" },
+  { "id": 5, "phrase": "Think on your feet", "meaning": "to think and react quickly, especially in a difficult situation" },
+  { "id": 6, "phrase": "Pull yourself together", "meaning": "to become calm and organized after being upset or confused" },
+  { "id": 7, "phrase": "Give it a shot", "meaning": "to try something, even though you might not succeed" },
+  { "id": 8, "phrase": "Keep your chin up", "meaning": "to stay positive and cheerful in a difficult situation" },
   { "id": 9, "phrase": "On the same page", "meaning": "in agreement about something" },
-  { "id": 10, "phrase": "Touch base", "meaning": "to make contact with someone" }
+  { "id": 10, "phrase": "Touch base", "meaning": "to make contact with someone, especially to exchange information" }
 ]

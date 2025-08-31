@@ -1,12 +1,12 @@
 [
-  { "id": 1, "word": "Confidence", "meaning": "belief in yourself" },
-  { "id": 2, "word": "Audience", "meaning": "people listening to you" },
-  { "id": 3, "word": "Presentation", "meaning": "a formal talk given to an audience" },
-  { "id": 4, "word": "Communication", "meaning": "the act of sharing information" },
-  { "id": 5, "word": "Leadership", "meaning": "the ability to guide and inspire others" },
-  { "id": 6, "word": "Innovation", "meaning": "a new idea or method" },
-  { "id": 7, "word": "Collaboration", "meaning": "working together with others" },
-  { "id": 8, "word": "Professional", "meaning": "relating to work or business" },
-  { "id": 9, "word": "Experience", "meaning": "knowledge gained from doing something" },
-  { "id": 10, "word": "Opportunity", "meaning": "a chance to do something" }
+  { "id": 1, "word": "Articulate", "meaning": "able to express thoughts and ideas clearly and effectively" },
+  { "id": 2, "word": "Eloquent", "meaning": "fluent and persuasive in speech or writing" },
+  { "id": 3, "word": "Confident", "meaning": "feeling certain about your abilities and not afraid to express yourself" },
+  { "id": 4, "word": "Persuasive", "meaning": "good at convincing others to agree with your point of view" },
+  { "id": 5, "word": "Articulate", "meaning": "to express an idea or feeling clearly in words" },
+  { "id": 6, "word": "Engaging", "meaning": "interesting and able to hold someone's attention" },
+  { "id": 7, "word": "Authentic", "meaning": "genuine and real, not fake or artificial" },
+  { "id": 8, "word": "Charismatic", "meaning": "having a compelling charm that inspires devotion in others" },
+  { "id": 9, "word": "Influential", "meaning": "having the power to change or affect someone or something" },
+  { "id": 10, "word": "Compelling", "meaning": "very interesting and exciting, making you want to pay attention" }
 ]

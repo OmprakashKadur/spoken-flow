@@ -162,14 +162,16 @@ export default function MarkedView() {
                     {content.meaning}
                   </p>
                 )}
-                {('en' in content && 'kn' in content) && (
+                {('en' in content) && (
                   <div className="space-y-2">
                     <p className="text-gray-900 dark:text-white text-sm font-medium">
                       {content.en}
                     </p>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm">
-                      {content.kn}
-                    </p>
+                    {('meaning' in content) && (
+                      <p className="text-gray-600 dark:text-gray-400 text-sm">
+                        {content.meaning}
+                      </p>
+                    )}
                   </div>
                 )}
                 {('content' in content) && (

@@ -1,0 +1,12 @@
+[
+  { "id": 21, "phrase": "Get your point across", "meaning": "to make someone understand what you are trying to say" },
+  { "id": 22, "phrase": "In a nutshell", "meaning": "in a few words; briefly" },
+  { "id": 23, "phrase": "Long story short", "meaning": "to summarize; to tell the main points briefly" },
+  { "id": 24, "phrase": "Make yourself clear", "meaning": "to express yourself in a way that is easy to understand" },
+  { "id": 25, "phrase": "Put it simply", "meaning": "to explain something in an easy-to-understand way" },
+  { "id": 26, "phrase": "Speak your mind", "meaning": "to say what you really think" },
+  { "id": 27, "phrase": "Take the floor", "meaning": "to begin speaking in a meeting or debate" },
+  { "id": 28, "phrase": "Word of mouth", "meaning": "information passed from person to person by speaking" },
+  { "id": 29, "phrase": "You said it", "meaning": "I agree completely with what you just said" },
+  { "id": 30, "phrase": "Get straight to the point", "meaning": "to talk about the most important thing immediately" }
+]

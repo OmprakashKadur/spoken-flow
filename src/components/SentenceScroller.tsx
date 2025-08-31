@@ -90,7 +90,7 @@ export default function SentenceScroller({
           <button
             onClick={goToNext}
             className="px-3 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600"
-          >
+            >
             ⏭ Next
           </button>
         </div>
