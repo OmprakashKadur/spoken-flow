@@ -1,29 +1,31 @@
 import Link from 'next/link';
+import { HomeIcon, BookOpen } from 'lucide-react';
 import { categories } from '@/utils/data';
 import CategoryCard from '@/components/CategoryCard';
-import DarkModeToggle from '@/components/DarkModeToggle';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800">
       {/* Header */}
-      <header className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
+      <header className="bg-gray-800/80 backdrop-blur-sm border-b border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-6">
-            <div className="flex items-center space-x-3">
-              <div className="text-3xl">🎓</div>
-              <h1 className="text-2xl font-bold text-gray-900 dark:text-white">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center py-4 sm:py-6 space-y-4 sm:space-y-0">
+            <div className="flex items-center space-x-2 sm:space-x-3">
+              <div className="text-2xl sm:text-3xl">🎓</div>
+              <h1 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
                 Spoken Flow
               </h1>
             </div>
-            <nav className="flex items-center space-x-4">
+            <nav className="flex items-center space-x-3 sm:space-x-4 w-full sm:w-auto justify-between sm:justify-end">
               <Link
                 href="/marked"
-                className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+                className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base flex items-center"
               >
-                📚 Marked Items
+                {/* Mobile Icon */}
+                <BookOpen className="sm:hidden w-5 h-5 mr-2" />
+                {/* Desktop Text */}
+                <span className="hidden sm:inline">📚 Marked Items</span>
               </Link>
-              <DarkModeToggle />
             </nav>
           </div>
         </div>
@@ -89,7 +91,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-700 mt-20">
+      <footer className="bg-gray-800/80 backdrop-blur-sm border-t border-gray-700 mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600 dark:text-gray-400">
             <p>© {new Date().getFullYear()} Spoken Flow. Built with Next.js and TailwindCSS.</p>
