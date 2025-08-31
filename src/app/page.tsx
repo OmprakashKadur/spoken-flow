@@ -8,28 +8,34 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800">
       {/* Header */}
       <header className="bg-gray-800/80 backdrop-blur-sm border-b border-gray-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center py-4 sm:py-6 space-y-4 sm:space-y-0">
-            <div className="flex items-center space-x-2 sm:space-x-3">
-              <div className="text-2xl sm:text-3xl">🎓</div>
-              <h1 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
-                Spoken Flow
-              </h1>
-            </div>
-            <nav className="flex items-center space-x-3 sm:space-x-4 w-full sm:w-auto justify-between sm:justify-end">
-              <Link
-                href="/marked"
-                className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base flex items-center"
-              >
-                {/* Mobile Icon */}
-                <BookOpen className="sm:hidden w-5 h-5 mr-2" />
-                {/* Desktop Text */}
-                <span className="hidden sm:inline">📚 Marked Items</span>
-              </Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex items-center justify-between py-4 sm:py-6">
+      
+      {/* Left Section: Logo + Title */}
+      <div className="flex items-center space-x-2 sm:space-x-3">
+        <div className="text-2xl sm:text-3xl">🎓</div>
+        <h1 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
+          Spoken Flow
+        </h1>
+      </div>
+
+      {/* Right Section: Marked Items */}
+      <nav className="flex items-center">
+        <Link
+          href="/marked"
+          className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base flex items-center"
+        >
+          {/* Mobile Icon */}
+          <BookOpen className="sm:hidden w-5 h-5 mr-2" />
+          {/* Desktop Text */}
+          <span className="hidden sm:inline">📚 Marked Items</span>
+        </Link>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
 
       {/* Hero Section */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

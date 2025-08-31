@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import { HomeIcon, BookOpen } from "lucide-react";
+import { ArrowLeft, BookOpen } from "lucide-react";
 import {
   ContentType,
   Word,
@@ -102,23 +102,18 @@ export default function CategoryPage() {
   return (
     <div className="min-h-screen bg-gray-900">
       {/* Header */}
-      <header className="bg-gray-800 shadow-sm border-b border-gray-700">
+      {/* <header className="bg-gray-800 shadow-sm border-b border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center py-4 sm:py-6 space-y-4 sm:space-y-0">
-            {/* Left Section */}
+          <div className="flex  sm:flex-row justify-between items-start sm:items-center py-4 sm:py-6 space-y-4 sm:space-y-0">
             <div className="flex justify-between sm:flex-row items-start sm:items-center space-y-2 sm:space-y-0 sm:space-x-4">
-              {/* Back to Home - Icon for mobile, text for desktop */}
                              <Link
                  href="/"
-                 className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base flex items-center"
+                 className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base flex justify-between items-center"
                >
-                 {/* Mobile Icon */}
                  <HomeIcon className="sm:hidden w-5 h-5 mr-2" />
-                 {/* Desktop Text */}
                  <span className="hidden sm:inline">← Back to Home</span>
                </Link>
 
-              {/* Category Info */}
               <div className="flex items-center space-x-2 sm:space-x-3">
                 <span className="text-xl sm:text-2xl">{categoryInfo.icon}</span>
                 <h1 className="text-xl sm:text-2xl font-bold text-white">
@@ -127,21 +122,53 @@ export default function CategoryPage() {
               </div>
             </div>
 
-            {/* Right Section */}
             <nav className="flex items-center space-x-3 sm:space-x-4 w-full sm:w-auto justify-between sm:justify-end">
                              <Link
                  href="/marked"
                  className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base flex items-center"
                >
-                 {/* Mobile Icon */}
                  <BookOpen className="sm:hidden w-5 h-5 mr-2" />
-                 {/* Desktop Text */}
                  <span className="hidden sm:inline">📚 Marked Items</span>
                </Link>
             </nav>
           </div>
         </div>
-      </header>
+      </header> */}
+<header className="bg-gray-800 shadow-sm border-b border-gray-700">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex justify-between items-center py-4 sm:py-6">
+      {/* Left Section: Back to Home */}
+      <Link
+        href="/"
+        className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base flex items-center"
+      >
+        {/* Mobile Icon */}
+        <ArrowLeft className="sm:hidden w-5 h-5 mr-2" />
+        {/* Desktop Text */}
+        <span className="hidden sm:inline"> <ArrowLeft className="sm:hidden w-5 h-5 mr-2" /> Back to Home</span>
+      </Link>
+
+      {/* Middle Section: Category Info */}
+      <div className="flex items-center space-x-2 sm:space-x-3">
+        <span className="text-xl sm:text-2xl">{categoryInfo.icon}</span>
+        <h1 className="text-xl sm:text-2xl font-bold text-white">
+          {categoryInfo.name}
+        </h1>
+      </div>
+
+      {/* Right Section: Marked Items */}
+      <Link
+        href="/marked"
+        className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base flex items-center"
+      >
+        {/* Mobile Icon */}
+        <BookOpen className="sm:hidden w-5 h-5 mr-2" />
+        {/* Desktop Text */}
+        <span className="hidden sm:inline">📚 Marked Items</span>
+      </Link>
+    </div>
+  </div>
+</header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Controls */}
